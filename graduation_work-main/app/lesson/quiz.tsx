@@ -1,25 +1,27 @@
-"use client";
+//нАСТЯ
+"use client"; // Компонент рендериться на клієнті
 
-import { Footer } from "./footer";
-import { challengesOptions, challenges } from "@/db/schema";
+import { Footer } from "./footer"; // Футер з кнопками перевірки/продовження
+import { challengesOptions, challenges } from "@/db/schema"; // Схема бази даних для завдань
 import { useState, useTransition, useRef, useEffect } from "react";
-import { Header } from "./header";
-import { QuestionBubble } from "./question-bubble";
-import { Challenge } from "./challenge";
-import { WriteChallenge, WriteChallengeRef } from "./write-challenge";
-import { upsertChallengeProgress } from "@/actions/challenge-progress";
-import { reduceHearts, type ReduceHeartsResult } from "@/actions/user-progress";
-import { useAudio, useWindowSize } from "react-use";
-import Image from "next/image";
-import { ResultCard } from "./result-card";
-import Confetti from "react-confetti";
-import { useRouter } from "next/navigation";
-import { useHeartsModal } from "@/store/use-hearts-modal";
-import { usePracticeModal } from "@/store/use-practice-modal";
-import { PracticeModal } from "@/components/modals/practice-modal";
-import { useLanguage } from "@/components/languageContext";
-import { translations } from "@/components/translations";
+import { Header } from "./header"; // Хедер з серцями та прогресом
+import { QuestionBubble } from "./question-bubble"; // Бульбашка питання
+import { Challenge } from "./challenge"; // Компонент для SELECT / ASSIST / LISTEN
+import { WriteChallenge, WriteChallengeRef } from "./write-challenge"; // Компонент для WRITE-завдань
+import { upsertChallengeProgress } from "@/actions/challenge-progress"; // Функція збереження прогресу
+import { reduceHearts, type ReduceHeartsResult } from "@/actions/user-progress"; // Функції роботи з серцями
+import { useAudio, useWindowSize } from "react-use"; // Хуки для аудіо та розміру вікна
+import Image from "next/image"; // Next.js Image
+import { ResultCard } from "./result-card"; // Картка результатів
+import Confetti from "react-confetti"; // Конфетті при завершенні уроку
+import { useRouter } from "next/navigation"; // Навігація
+import { useHeartsModal } from "@/store/use-hearts-modal"; // Модалка сердець
+import { usePracticeModal } from "@/store/use-practice-modal"; // Модалка практики
+import { PracticeModal } from "@/components/modals/practice-modal"; // Компонент модалки практики
+import { useLanguage } from "@/components/languageContext"; // Хук локалізації
+import { translations } from "@/components/translations"; // Переклади
 
+// Тип пропсів для компонента Quiz
 type Props = {
   initialLessonId: number;
   initialHearts: number;
@@ -30,38 +32,41 @@ type Props = {
   })[];
 };
 
+// ✅ Основний компонент Quiz — навчальний двигун
 export const Quiz = ({
   initialLessonId,
   initialHearts,
   initialPercentage,
   initialLessonChallenges,
 }: Props) => {
-  const router = useRouter();
-  const { width, height } = useWindowSize();
-  const heartsModal = useHeartsModal();
-  const practiceModal = usePracticeModal();
+  const router = useRouter(); // Навігація
+  const { width, height } = useWindowSize(); // Розміри вікна для конфетті
+  const heartsModal = useHeartsModal(); // Модалка сердець
+  const practiceModal = usePracticeModal(); // Модалка практики
 
-  const { lang } = useLanguage();
-  const t = translations[lang].quiz;
+  const { lang } = useLanguage(); // Поточна мова
+  const t = translations[lang].quiz; // Переклади для Quiz
 
+  // Аудіо
   const [correctAudio, _c, correctControls] = useAudio({ src: "/correct.mp3" });
   const [incorrectAudio, _i, incorrectControls] = useAudio({ src: "/incorrect.mp3" });
   const [finishAudio] = useAudio({ src: "/finish.mp3", autoPlay: false });
 
-  const [pending, startTransition] = useTransition();
+  const [pending, startTransition] = useTransition(); // React Transition для оновлення стану
 
-  const [hearts, setHearts] = useState(initialHearts);
-  const [percentage, setPercentage] = useState(initialPercentage);
-  const [challengesState] = useState(initialLessonChallenges);
+  // Локальні стани
+  const [hearts, setHearts] = useState(initialHearts); // Серця користувача
+  const [percentage, setPercentage] = useState(initialPercentage); // Прогрес уроку
+  const [challengesState] = useState(initialLessonChallenges); // Список завдань
 
+  // Індекс активного завдання
   const [activeIndex, setActiveIndex] = useState(() => {
     const uncompleted = initialLessonChallenges.findIndex((ch) => !ch.completed);
     return uncompleted === -1 ? 0 : uncompleted;
   });
 
-  const [isFinished, setIsFinished] = useState(activeIndex >= initialLessonChallenges.length);
-
-  const isPracticeMode = initialPercentage >= 100;
+  const [isFinished, setIsFinished] = useState(activeIndex >= initialLessonChallenges.length); // Чи урок завершено
+  const isPracticeMode = initialPercentage >= 100; // Перевірка практичного режиму
 
   // 🔹 Локальний стан, щоб відкрити PracticeModal лише один раз
   const [practiceModalOpened, setPracticeModalOpened] = useState(false);
@@ -73,20 +78,20 @@ export const Quiz = ({
     }
   }, [isPracticeMode, practiceModal, practiceModalOpened]);
 
-  const [selectedOption, setSelectedOption] = useState<number | undefined>();
-  const [status, setStatus] = useState<"correct" | "wrong" | "none">("none");
+  const [selectedOption, setSelectedOption] = useState<number | undefined>(); // Вибір користувача
+  const [status, setStatus] = useState<"correct" | "wrong" | "none">("none"); // Статус завдання
 
-  const writeRef = useRef<WriteChallengeRef>(null);
+  const writeRef = useRef<WriteChallengeRef>(null); // Ref для WRITE-завдань
 
-  const challenge = challengesState[activeIndex];
+  const challenge = challengesState[activeIndex]; // Поточне завдання
   const options = challenge?.challengeOption ?? [];
 
   if (!challenge) return null;
 
-  // 🌍 ПЕРЕКЛАД ПИТАННЯ
-  const question =
-    challenge.questionTranslations?.[lang] ?? challenge.question;
+  // 🌍 Переклад питання
+  const question = challenge.questionTranslations?.[lang] ?? challenge.question;
 
+  // Функції для відтворення аудіо
   const playAudio = async (src?: string | null) => {
     if (!src) return;
     try {
@@ -101,19 +106,20 @@ export const Quiz = ({
     if (opt?.audioSrc) playAudio(opt.audioSrc);
   };
 
+  // Обробка переходу до наступного завдання
   const onNext = () => {
     if (activeIndex + 1 >= challengesState.length) {
       setIsFinished(true);
       setStatus("none");
       return;
     }
-
     setActiveIndex((prev) => prev + 1);
     setStatus("none");
     setSelectedOption(undefined);
     writeRef.current?.clear();
   };
 
+  // Обробка перевірки відповіді та логіки сердець
   const onContinue = () => {
     if (status !== "none") {
       if (status === "correct") onNext();
@@ -126,7 +132,7 @@ export const Quiz = ({
       return;
     }
 
-    // WRITE
+    // WRITE-завдання
     if (challenge.type === "WRITE") {
       const answer = writeRef.current?.getValue() || "";
       const correctAnswer = options.find((o) => o.correct)?.text || "";
@@ -163,7 +169,7 @@ export const Quiz = ({
       return;
     }
 
-    // SELECT / ASSIST / LISTEN
+    // SELECT / ASSIST / LISTEN завдання
     if (!selectedOption) return;
     const correctOption = options.find((o) => o.correct);
     if (!correctOption) return;
@@ -200,7 +206,7 @@ export const Quiz = ({
     }
   };
 
-  // 🎉 FINISH
+  // 🎉 FINISH — якщо урок завершено
   if (isFinished) {
     return (
       <>
@@ -249,7 +255,7 @@ export const Quiz = ({
       {incorrectAudio}
       {finishAudio}
 
-      <PracticeModal /> {/* 🔹 додали тут, щоб показувалась у всіх уроках */}
+      <PracticeModal /> {/* 🔹 модалка практики */}
 
       <Header hearts={hearts} percentage={percentage} />
 

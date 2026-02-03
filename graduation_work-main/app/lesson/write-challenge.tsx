@@ -1,35 +1,45 @@
-"use client"
+//мАША
 
-import { forwardRef, useImperativeHandle, useState } from "react"
+"use client"; // Вказує Next.js, що цей компонент рендериться на клієнті (Client Component)
 
+import { forwardRef, useImperativeHandle, useState } from "react";
+
+// Тип рефа для WriteChallenge
+// Ми можемо отримати значення або очистити поле з батьківського компонента
 export type WriteChallengeRef = {
-  getValue: () => string
-  clear: () => void
-}
+  getValue: () => string; // повертає поточне значення input
+  clear: () => void;      // очищає input
+};
 
+// Тип пропсів для WriteChallenge
 type Props = {
-  disabled?: boolean
-  placeholder?: string
-}
+  disabled?: boolean;       // чи вимкнене поле
+  placeholder?: string;     // текст-підказка у полі
+};
 
+// Компонент WriteChallenge з forwardRef, щоб батьківський компонент міг керувати input
 export const WriteChallenge = forwardRef<WriteChallengeRef, Props>(
   ({ disabled, placeholder }, ref) => {
-    const [value, setValue] = useState("")
+    // Локальний стан значення input
+    const [value, setValue] = useState("");
 
+    // Встановлюємо методи, доступні через ref
     useImperativeHandle(ref, () => ({
-      getValue: () => value,
-      clear: () => setValue("")
-    }))
+      getValue: () => value, // метод для отримання поточного тексту
+      clear: () => setValue("") // метод для очищення поля
+    }));
 
     return (
+      // Контейнер для центрування input
       <div className="w-full flex justify-center">
         <div className="w-full max-w-xl">
+          {/* Поле вводу */}
           <input
             type="text"
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            disabled={disabled}
-            placeholder={placeholder}
+            value={value}                   // прив’язка до стану
+            onChange={(e) => setValue(e.target.value)} // оновлення стану при введенні
+            disabled={disabled}             // блокування поля при disabled
+            placeholder={placeholder}       // підказка для користувача
 
             className="
               w-full px-5 py-3
@@ -48,9 +58,10 @@ export const WriteChallenge = forwardRef<WriteChallengeRef, Props>(
           />
         </div>
       </div>
-    )
+    );
   }
-)
+);
 
-WriteChallenge.displayName = "WriteChallenge"
+// Встановлюємо displayName для кращого дебагу у React DevTools
+WriteChallenge.displayName = "WriteChallenge";
 

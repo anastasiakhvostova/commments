@@ -1,43 +1,31 @@
-import Image from "next/image";
-import { cn } from "@/lib/utils";
+//маша
 
+"use client"; // Вказує Next.js, що цей компонент буде працювати на клієнті (React Client Component)
+
+import { ResultCard } from "./result-card"; // Імпорт основного компонента ResultCard
+import { useLanguage } from "@/components/languageContext"; // Хук для отримання поточної мови
+import { translations } from "@/components/translations"; // Файл з перекладами
+
+// Тип пропсів для компонента ResultCardClient
+// value: число балів або сердець
+// variant: тип результату — "points" або "hearts"
 type Props = {
   value: number;
   variant: "points" | "hearts";
-  label: string; // потрібно передавати label
 };
 
-export const ResultCard = ({ value, variant, label }: Props) => {
-  const imageSrc = variant === "hearts" ? "/heart.png" : "/points.png";
+// Функціональний компонент ResultCardClient
+// Відповідальний за відображення результатів після уроку
+export const ResultCardClient = ({ value, variant }: Props) => {
+  // Отримуємо поточну мову з контексту
+  const { lang } = useLanguage();
 
-  return (
-    <div
-      className={cn(
-        "rounded-2xl border-2 w-full",
-        variant === "points" && "bg-orange-400 border-orange-400",
-        variant === "hearts" && "bg-rose-500 border-rose-500"
-      )}
-    >
-      <div
-        className={cn(
-          "p-1.5 text-white rounded-t-xl font-bold text-center uppercase text-xs",
-          variant === "hearts" && "bg-rose-500",
-          variant === "points" && "bg-orange-400"
-        )}
-      >
-        {label}
-      </div>
+  // ✅ Звертаємось до перекладів конкретно для ResultCard у Quiz
+  const t = translations[lang].quiz.resultCard;
 
-      <div
-        className={cn(
-          "rounded-2xl bg-white flex items-center justify-center p-6 font-bold text-lg",
-          variant === "hearts" && "text-rose-500",
-          variant === "points" && "text-orange-500"
-        )}
-      >
-        <Image alt="Icon" src={imageSrc} height={30} width={30} className="mr-1.5" />
-        {value}
-      </div>
-    </div>
-  );
+  // Вибір правильної мітки залежно від варіанту
+  const label = variant === "hearts" ? t.heartsLabel : t.pointsLabel;
+
+  // Повертаємо компонент ResultCard із переданими пропсами
+  return <ResultCard value={value} variant={variant} label={label} />;
 };
