@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "audio": "/audio/16/cuddy.mp3",
+    "word": "Cuddy",
+    "translations": {
+      "ua": "кінь",
+      "en": "horse",
+      "de": "Pferd"
+    }
+  },
+  {
+    "id": 2,
+    "audio": "/audio/16/Pannier.mp3",
+    "word": "Pannier",
+    "translations": {
+      "ua": "кошик",
+      "en": "basket",
+      "de": "Korb"
+    }
+  },
+  {
+    "id": 3,
+    "audio": "/audio/16/Garth.mp3",
+    "word": "Garth",
+    "translations": {
+      "ua": "сад/двір",
+      "en": "garden / yard",
+      "de": "Garten / Hof"
+    }
+  },
+  {
+    "id": 4,
+    "audio": "/audio/16/kist.mp3",
+    "word": "Kist",
+    "translations": {
+      "ua": "коробка/скриня",
+      "en": "box / chest",
+      "de": "Kiste / Truhe"
+    }
+  },
+  {
+    "id": 5,
+    "audio": "/audio/16/Beck.mp3",
+    "word": "Beck",
+    "translations": {
+      "ua": "невеликий потік, струмок",
+      "en": "small stream / brook",
+      "de": "kleiner Bach"
+    }
+  },
+  {
+    "id": 6,
+    "audio": "/audio/16/Croft.mp3",
+    "word": "Croft",
+    "translations": {
+      "ua": "невелика ферма, земельна ділянка",
+      "en": "small farm / plot",
+      "de": "kleiner Bauernhof / Grundstück"
+    }
+  },
+  {
+    "id": 7,
+    "audio": "/audio/16/Staithe.mp3",
+    "word": "Staithe",
+    "translations": {
+      "ua": "гавань, причал",
+      "en": "harbor / quay",
+      "de": "Hafen / Kai"
+    }
+  },
+  {
+    "id": 8,
+    "audio": "/audio/16/Ginnel.mp3",
+    "word": "Ginnel",
+    "translations": {
+      "ua": "вузький прохід, провулок",
+      "en": "narrow passage / alley",
+      "de": "enge Gasse / Durchgang"
+    }
+  },
+  {
+    "id": 9,
+    "audio": "/audio/16/Yow.mp3",
+    "word": "Yow",
+    "translations": {
+      "ua": "вівця",
+      "en": "sheep",
+      "de": "Schaf"
+    }
+  },
+  {
+    "id": 10,
+    "audio": "/audio/16/Neddy.mp3",
+    "word": "Neddy",
+    "translations": {
+      "ua": "кінь",
+      "en": "horse",
+      "de": "Pferd"
+    }
+  }
+]

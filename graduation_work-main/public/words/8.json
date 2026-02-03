@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "audio": "/audio/8/газда.mp3",
+    "word": "Ґазда",
+    "translations": {
+      "ua": "господар",
+      "en": "master, host",
+      "de": "Hausherr"
+    }
+  },
+  {
+    "id": 2,
+    "audio": "/audio/8/файний.mp3",
+    "word": "Файний",
+    "translations": {
+      "ua": "гарний",
+      "en": "nice, good",
+      "de": "schön, gut"
+    }
+  },
+  {
+    "id": 3,
+    "audio": "/audio/8/ґринджоли.mp3",
+    "word": "ґринджоли",
+    "translations": {
+      "ua": "санчата",
+      "en": "sleds",
+      "de": "Schlitten"
+    }
+  },
+  {
+    "id": 4,
+    "audio": "/audio/8/леванда.mp3",
+    "word": "Леванда",
+    "translations": {
+      "ua": "підлога",
+      "en": "floor",
+      "de": "Boden"
+    }
+  },
+  {
+    "id": 5,
+    "audio": "/audio/8/мешти.mp3",
+    "word": "Мешти",
+    "translations": {
+      "ua": "взуття",
+      "en": "shoes",
+      "de": "Schuhe"
+    }
+  },
+  {
+    "id": 6,
+    "audio": "/audio/8/плай.mp3",
+    "word": "Плай",
+    "translations": {
+      "ua": "гірська стежка",
+      "en": "mountain path",
+      "de": "Bergpfad"
+    }
+  },
+  {
+    "id": 7,
+    "audio": "/audio/8/кучма.mp3",
+    "word": "Кучма",
+    "translations": {
+      "ua": "тепла шапка",
+      "en": "warm hat",
+      "de": "warme Mütze"
+    }
+  },
+  {
+    "id": 8,
+    "audio": "/audio/8/фіртка.mp3",
+    "word": "Фіртка",
+    "translations": {
+      "ua": "хвіртка",
+      "en": "small gate",
+      "de": "kleines Tor"
+    }
+  },
+  {
+    "id": 9,
+    "audio": "/audio/8/плєцак.mp3",
+    "word": "Плєцак",
+    "translations": {
+      "ua": "рюкзак",
+      "en": "backpack",
+      "de": "Rucksack"
+    }
+  },
+  {
+    "id": 10,
+    "audio": "/audio/8/баняк.mp3",
+    "word": "Баняк",
+    "translations": {
+      "ua": "каструля",
+      "en": "pot, saucepan",
+      "de": "Topf"
+    }
+  },
+  {
+    "id": 11,
+    "audio": "/audio/8/ліґуміна.mp3",
+    "word": "Ліґуміна",
+    "translations": {
+      "ua": "солодка страва, десерт",
+      "en": "sweet dish, dessert",
+      "de": "süße Speise, Dessert"
+    }
+  },
+  {
+    "id": 12,
+    "audio": "/audio/8/Ґейби.mp3",
+    "word": "Ґейби",
+    "translations": {
+      "ua": "начебто, ніби",
+      "en": "as if",
+      "de": "als ob"
+    }
+  },
+  {
+    "id": 13,
+    "audio": "/audio/8/Бляшняр.mp3",
+    "word": "Бляшняр",
+    "translations": {
+      "ua": "майстер, що працює з бляхою",
+      "en": "metal worker",
+      "de": "Blechner"
+    }
+  },
+  {
+    "id": 14,
+    "audio": "/audio/8/Позір.mp3",
+    "word": "Позір",
+    "translations": {
+      "ua": "увага",
+      "en": "attention",
+      "de": "Aufmerksamkeit"
+    }
+  },
+  {
+    "id": 15,
+    "audio": "/audio/8/Стодоля.mp3",
+    "word": "Стодоля",
+    "translations": {
+      "ua": "комора для зерна",
+      "en": "grain storage, barn",
+      "de": "Getreidespeicher, Scheune"
+    }
+  },
+  {
+    "id": 16,
+    "audio": "/audio/8/Кужіль.mp3",
+    "word": "Кужіль",
+    "translations": {
+      "ua": "прядиво, волокно льону чи конопель",
+      "en": "fiber, flax or hemp",
+      "de": "Faser, Leinen- oder Hanffaser"
+    }
+  },
+  {
+    "id": 17,
+    "audio": "/audio/8/Гвер.mp3",
+    "word": "Гвер",
+    "translations": {
+      "ua": "рушниця",
+      "en": "rifle",
+      "de": "Gewehr"
+    }
+  },
+  {
+    "id": 18,
+    "audio": "/audio/8/Пляц.mp3",
+    "word": "Пляц",
+    "translations": {
+      "ua": "земельна ділянка",
+      "en": "plot of land",
+      "de": "Grundstück"
+    }
+  }
+]

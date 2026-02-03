@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "audio": "/audio/14/scran.mp3",
+    "word": "Scran",
+    "translations": {
+      "ua": "їжа",
+      "en": "food",
+      "de": "Essen"
+    }
+  },
+  {
+    "id": 2,
+    "audio": "/audio/14/kecks.mp3",
+    "word": "Kecks",
+    "translations": {
+      "ua": "штани",
+      "en": "trousers",
+      "de": "Hose"
+    }
+  },
+  {
+    "id": 3,
+    "audio": "/audio/14/wool.mp3",
+    "word": "Wool",
+    "translations": {
+      "ua": "не місцевий/чужак",
+      "en": "outsider",
+      "de": "Außenseiter"
+    }
+  },
+  {
+    "id": 4,
+    "audio": "/audio/14/jarg.mp3",
+    "word": "Jarg",
+    "translations": {
+      "ua": "фальшивий/підробка",
+      "en": "fake / counterfeit",
+      "de": "falsch / Fälschung"
+    }
+  },
+  {
+    "id": 5,
+    "audio": "/audio/14/lid.mp3",
+    "word": "Lid",
+    "translations": {
+      "ua": "голова",
+      "en": "head",
+      "de": "Kopf"
+    }
+  },
+  {
+    "id": 6,
+    "audio": "/audio/14/la.mp3",
+    "word": "La/lad",
+    "translations": {
+      "ua": "друг/товариш",
+      "en": "friend / mate",
+      "de": "Freund / Kumpel"
+    }
+  },
+  {
+    "id": 7,
+    "audio": "/audio/14/div.mp3",
+    "word": "Div",
+    "translations": {
+      "ua": "дурень",
+      "en": "fool",
+      "de": "Narr"
+    }
+  },
+  {
+    "id": 8,
+    "audio": "/audio/14/liddo.mp3",
+    "word": "Liddo / little one",
+    "translations": {
+      "ua": "дитина",
+      "en": "child",
+      "de": "Kind"
+    }
+  },
+  {
+    "id": 9,
+    "audio": "/audio/14/bevvy.mp3",
+    "word": "Bevvy",
+    "translations": {
+      "ua": "алкогольний напій",
+      "en": "alcoholic drink",
+      "de": "alkoholisches Getränk"
+    }
+  },
+  {
+    "id": 10,
+    "audio": "/audio/14/boss.mp3",
+    "word": "Boss",
+    "translations": {
+      "ua": "гарний/чудовий",
+      "en": "great / awesome",
+      "de": "toll / großartig"
+    }
+  }
+]

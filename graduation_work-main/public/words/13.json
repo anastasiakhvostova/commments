@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "audio": "/audio/13/bees_and_honey.mp3",
+    "word": "Bees and honey",
+    "translations": {
+      "ua": "гроші",
+      "en": "money",
+      "de": "Geld"
+    }
+  },
+  {
+    "id": 2,
+    "audio": "/audio/13/loaf_of_bread.mp3",
+    "word": "Loaf of bread",
+    "translations": {
+      "ua": "голова",
+      "en": "head",
+      "de": "Kopf"
+    }
+  },
+  {
+    "id": 3,
+    "audio": "/audio/13/china_plate.mp3",
+    "word": "China plate",
+    "translations": {
+      "ua": "друг",
+      "en": "friend",
+      "de": "Freund"
+    }
+  },
+  {
+    "id": 4,
+    "audio": "/audio/13/apples_and_pears.mp3",
+    "word": "Apples and pears",
+    "translations": {
+      "ua": "сходи",
+      "en": "stairs",
+      "de": "Treppe"
+    }
+  },
+  {
+    "id": 5,
+    "audio": "/audio/13/barnet.mp3",
+    "word": "Barnet (fair)",
+    "translations": {
+      "ua": "волосся",
+      "en": "hair",
+      "de": "Haar"
+    }
+  },
+  {
+    "id": 6,
+    "audio": "/audio/13/bottle_and_stopper.mp3",
+    "word": "Bottle and stopper",
+    "translations": {
+      "ua": "поліцейський",
+      "en": "policeman",
+      "de": "Polizist"
+    }
+  },
+  {
+    "id": 7,
+    "audio": "/audio/13/half-ich.mp3",
+    "word": "Half-inch",
+    "translations": {
+      "ua": "украсти",
+      "en": "to steal",
+      "de": "stehlen"
+    }
+  },
+  {
+    "id": 8,
+    "audio": "/audio/13/trouble_and_strife.mp3",
+    "word": "Trouble and strife",
+    "translations": {
+      "ua": "дружина",
+      "en": "wife",
+      "de": "Ehefrau"
+    }
+  },
+  {
+    "id": 9,
+    "audio": "/audio/13/butchers_hook.mp3",
+    "word": "Butcher’s hook",
+    "translations": {
+      "ua": "подив/погляд",
+      "en": "look / glance",
+      "de": "Blick"
+    }
+  },
+  {
+    "id": 10,
+    "audio": "/audio/13/rossie_lee.mp3",
+    "word": "Rosie lee",
+    "translations": {
+      "ua": "чай",
+      "en": "tea",
+      "de": "Tee"
+    }
+  }
+]

@@ -1,0 +1,363 @@
+[
+  {
+    "id": 1,
+    "audio": "/audio/12/Griab di.mp3",
+    "word": "Griaß di!",
+    "translations": {
+      "ua": "привіт",
+      "en": "hello",
+      "de": "hallo"
+    }
+  },
+  {
+    "id": 2,
+    "audio": "/audio/12/Servus.mp3",
+    "word": "Servus!",
+    "translations": {
+      "ua": "привіт / бувай",
+      "en": "hi / bye",
+      "de": "servus / tschüss"
+    }
+  },
+  {
+    "id": 3,
+    "audio": "/audio/12/Erdapfel.mp3",
+    "word": "Erdäpfel",
+    "translations": {
+      "ua": "картопля",
+      "en": "potato",
+      "de": "Kartoffel"
+    }
+  },
+  {
+    "id": 4,
+    "audio": "/audio/12/apfe.mp3",
+    "word": "Apfe",
+    "translations": {
+      "ua": "яблуко",
+      "en": "apple",
+      "de": "Apfel"
+    }
+  },
+  {
+    "id": 5,
+    "audio": "/audio/12/brod.mp3",
+    "word": "Brod",
+    "translations": {
+      "ua": "хліб",
+      "en": "bread",
+      "de": "Brot"
+    }
+  },
+  {
+    "id": 6,
+    "audio": "/audio/12/Semmel.mp3",
+    "word": "Semmel",
+    "translations": {
+      "ua": "булочка",
+      "en": "bun",
+      "de": "Brötchen"
+    }
+  },
+  {
+    "id": 7,
+    "audio": "/audio/12/Wossa.mp3",
+    "word": "Wossa",
+    "translations": {
+      "ua": "вода",
+      "en": "water",
+      "de": "Wasser"
+    }
+  },
+  {
+    "id": 8,
+    "audio": "/audio/12/Kaffe.mp3",
+    "word": "Kaffe",
+    "translations": {
+      "ua": "кава",
+      "en": "coffee",
+      "de": "Kaffee"
+    }
+  },
+  {
+    "id": 9,
+    "audio": "/audio/12/guad.mp3",
+    "word": "guad",
+    "translations": {
+      "ua": "добре",
+      "en": "good",
+      "de": "gut"
+    }
+  },
+  {
+    "id": 10,
+    "audio": "/audio/12/sche.mp3",
+    "word": "sche (schön)",
+    "translations": {
+      "ua": "гарний",
+      "en": "beautiful",
+      "de": "schön"
+    }
+  },
+  {
+    "id": 11,
+    "audio": "/audio/12/Gwand.mp3",
+    "word": "Gwand",
+    "translations": {
+      "ua": "одяг",
+      "en": "clothes",
+      "de": "Kleidung"
+    }
+  },
+  {
+    "id": 12,
+    "audio": "/audio/12/Schuah.mp3",
+    "word": "Schuah",
+    "translations": {
+      "ua": "взуття",
+      "en": "shoes",
+      "de": "Schuhe"
+    }
+  },
+  {
+    "id": 13,
+    "audio": "/audio/12/Hosn.mp3",
+    "word": "Hosn",
+    "translations": {
+      "ua": "штани",
+      "en": "pants",
+      "de": "Hose"
+    }
+  },
+  {
+    "id": 14,
+    "audio": "/audio/12/Hemad.mp3",
+    "word": "Hemad",
+    "translations": {
+      "ua": "сорочка",
+      "en": "shirt",
+      "de": "Hemd"
+    }
+  },
+  {
+    "id": 15,
+    "audio": "/audio/12/Jackl.mp3",
+    "word": "Jackl",
+    "translations": {
+      "ua": "куртка",
+      "en": "jacket",
+      "de": "Jacke"
+    }
+  },
+  {
+    "id": 16,
+    "audio": "/audio/12/Dirndl.mp3",
+    "word": "Dirndl",
+    "translations": {
+      "ua": "сукня (традиційна)",
+      "en": "dress (traditional)",
+      "de": "Dirndl (traditionell)"
+    }
+  },
+  {
+    "id": 17,
+    "audio": "/audio/12/redn.mp3",
+    "word": "redn",
+    "translations": {
+      "ua": "розмовляти",
+      "en": "to talk",
+      "de": "reden"
+    }
+  },
+  {
+    "id": 18,
+    "audio": "/audio/12/helfa.mp3",
+    "word": "helfa",
+    "translations": {
+      "ua": "допомагати",
+      "en": "to help",
+      "de": "helfen"
+    }
+  },
+  {
+    "id": 19,
+    "audio": "/audio/12/koa.mp3",
+    "word": "koa",
+    "translations": {
+      "ua": "немає",
+      "en": "none / not",
+      "de": "kein"
+    }
+  },
+  {
+    "id": 20,
+    "audio": "/audio/12/Madel  Madele.mp3",
+    "word": "Mädel / Mädele",
+    "translations": {
+      "ua": "дівчина",
+      "en": "girl",
+      "de": "Mädchen"
+    }
+  },
+  {
+    "id": 21,
+    "audio": "/audio/12/Bua.mp3",
+    "word": "Bua",
+    "translations": {
+      "ua": "хлопець",
+      "en": "boy",
+      "de": "Bua / Junge"
+    }
+  },
+  {
+    "id": 22,
+    "audio": "/audio/12/heit.mp3",
+    "word": "heit",
+    "translations": {
+      "ua": "сьогодні",
+      "en": "today",
+      "de": "heute"
+    }
+  },
+  {
+    "id": 23,
+    "audio": "/audio/12/jetzt.mp3",
+    "word": "jetzt",
+    "translations": {
+      "ua": "зараз",
+      "en": "now",
+      "de": "jetzt"
+    }
+  },
+  {
+    "id": 24,
+    "audio": "/audio/12/glei.mp3",
+    "word": "glei",
+    "translations": {
+      "ua": "скоро",
+      "en": "soon",
+      "de": "gleich"
+    }
+  },
+  {
+    "id": 25,
+    "audio": "/audio/12/Voda.mp3",
+    "word": "Voda",
+    "translations": {
+      "ua": "батько",
+      "en": "father",
+      "de": "Vater"
+    }
+  },
+  {
+    "id": 26,
+    "audio": "/audio/12/Muada.mp3",
+    "word": "Muada",
+    "translations": {
+      "ua": "мати",
+      "en": "mother",
+      "de": "Mutter"
+    }
+  },
+  {
+    "id": 27,
+    "audio": "/audio/12/a bissl  a weng.mp3",
+    "word": "a bissl / a weng",
+    "translations": {
+      "ua": "трохи",
+      "en": "a little",
+      "de": "ein bisschen"
+    }
+  },
+  {
+    "id": 28,
+    "audio": "/audio/12/guat drauf.mp3",
+    "word": "guat drauf",
+    "translations": {
+      "ua": "у гарному настрої",
+      "en": "in a good mood",
+      "de": "gut drauf"
+    }
+  },
+  {
+    "id": 29,
+    "audio": "/audio/12/dahoam.mp3",
+    "word": "dahoam",
+    "translations": {
+      "ua": "вдома",
+      "en": "at home",
+      "de": "zu Hause"
+    }
+  },
+  {
+    "id": 30,
+    "audio": "/audio/12/draubn.mp3",
+    "word": "draußn",
+    "translations": {
+      "ua": "надворі",
+      "en": "outside",
+      "de": "draußen"
+    }
+  },
+  {
+    "id": 31,
+    "audio": "/audio/12/Haus.mp3",
+    "word": "Haus",
+    "translations": {
+      "ua": "дім / будиночок",
+      "en": "house",
+      "de": "Haus"
+    }
+  },
+  {
+    "id": 32,
+    "audio": "/audio/12/Geschaft.mp3",
+    "word": "Geschäft",
+    "translations": {
+      "ua": "магазин",
+      "en": "shop / store",
+      "de": "Geschäft"
+    }
+  },
+  {
+    "id": 33,
+    "audio": "/audio/12/Kirch  Kircha.mp3",
+    "word": "Kirch / Kircha",
+    "translations": {
+      "ua": "церква",
+      "en": "church",
+      "de": "Kirche"
+    }
+  },
+  {
+    "id": 34,
+    "audio": "/audio/12/Schui.mp3",
+    "word": "Schui",
+    "translations": {
+      "ua": "школа",
+      "en": "school",
+      "de": "Schule"
+    }
+  },
+  {
+    "id": 35,
+    "audio": "/audio/12/geh.mp3",
+    "word": "geh",
+    "translations": {
+      "ua": "йти",
+      "en": "to go",
+      "de": "gehen"
+    }
+  },
+  {
+    "id": 36,
+    "audio": "/audio/12/do.mp3",
+    "word": "do",
+    "translations": {
+      "ua": "тут / там",
+      "en": "here / there",
+      "de": "hier / da"
+    }
+  }
+]
+

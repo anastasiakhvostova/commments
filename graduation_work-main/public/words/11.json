@@ -1,0 +1,372 @@
+[
+  {
+    "id": 1,
+    "audio": "/audio/11/isch.mp3",
+    "word": "Isch",
+    "translations": {
+      "ua": "я",
+      "en": "I",
+      "de": "ich"
+    }
+  },
+  {
+    "id": 2,
+    "audio": "/audio/11/du.mp3",
+    "word": "du",
+    "translations": {
+      "ua": "ти",
+      "en": "you",
+      "de": "du"
+    }
+  },
+  {
+    "id": 3,
+    "audio": "/audio/11/er.mp3",
+    "word": "er",
+    "translations": {
+      "ua": "він",
+      "en": "he",
+      "de": "er"
+    }
+  },
+  {
+    "id": 4,
+    "audio": "/audio/11/mir.mp3",
+    "word": "mir",
+    "translations": {
+      "ua": "ми",
+      "en": "we",
+      "de": "wir"
+    }
+  },
+  {
+    "id": 5,
+    "audio": "/audio/11/eich.mp3",
+    "word": "Eich",
+    "translations": {
+      "ua": "вас",
+      "en": "you (plural)",
+      "de": "euch/Sie"
+    }
+  },
+  {
+    "id": 6,
+    "audio": "/audio/11/zeit.mp3",
+    "word": "Zeit",
+    "translations": {
+      "ua": "час",
+      "en": "time",
+      "de": "Zeit"
+    }
+  },
+  {
+    "id": 8,
+    "audio": "/audio/11/mach.mp3",
+    "word": "Mach",
+    "translations": {
+      "ua": "роблю",
+      "en": "I do",
+      "de": "ich mache"
+    }
+  },
+  {
+    "id": 9,
+    "audio": "/audio/11/komm.mp3",
+    "word": "Komm",
+    "translations": {
+      "ua": "приходжу",
+      "en": "I come",
+      "de": "ich komme"
+    }
+  },
+  {
+    "id": 10,
+    "audio": "/audio/11/geh.mp3",
+    "word": "geh",
+    "translations": {
+      "ua": "йду",
+      "en": "I go",
+      "de": "ich gehe"
+    }
+  },
+  {
+    "id": 11,
+    "audio": "/audio/11/madsche.mp3",
+    "word": "Mädsche",
+    "translations": {
+      "ua": "дівчина",
+      "en": "girl",
+      "de": "Mädchen"
+    }
+  },
+  {
+    "id": 12,
+    "audio": "/audio/11/bub.mp3",
+    "word": "Bub",
+    "translations": {
+      "ua": "хлопець",
+      "en": "boy",
+      "de": "Junge"
+    }
+  },
+  {
+    "id": 13,
+    "audio": "/audio/11/fraa.mp3",
+    "word": "Fraa",
+    "translations": {
+      "ua": "жінка",
+      "en": "woman",
+      "de": "Frau"
+    }
+  },
+  {
+    "id": 14,
+    "audio": "/audio/11/mann.mp3",
+    "word": "mann",
+    "translations": {
+      "ua": "чоловік",
+      "en": "man",
+      "de": "Mann"
+    }
+  },
+  {
+    "id": 15,
+    "audio": "/audio/11/kinner.mp3",
+    "word": "Kinner",
+    "translations": {
+      "ua": "діти",
+      "en": "children",
+      "de": "Kinder"
+    }
+  },
+  {
+    "id": 16,
+    "audio": "/audio/11/aussehn.mp3",
+    "word": "Aussehn",
+    "translations": {
+      "ua": "виглядати",
+      "en": "to look",
+      "de": "aussehen"
+    }
+  },
+  {
+    "id": 17,
+    "audio": "/audio/11/ken.mp3",
+    "word": "Ken",
+    "translations": {
+      "ua": "жоден",
+      "en": "none",
+      "de": "kein"
+    }
+  },
+  {
+    "id": 18,
+    "audio": "/audio/11/zeit.mp3",
+    "word": "Zeit",
+    "translations": {
+      "ua": "час",
+      "en": "time",
+      "de": "Zeit"
+    }
+  },
+  {
+    "id": 19,
+    "audio": "/audio/11/schnell.mp3",
+    "word": "Schnell",
+    "translations": {
+      "ua": "швидко",
+      "en": "fast",
+      "de": "schnell"
+    }
+  },
+  {
+    "id": 20,
+    "audio": "/audio/11/langsam.mp3",
+    "word": "Langsam",
+    "translations": {
+      "ua": "повільно",
+      "en": "slow",
+      "de": "langsam"
+    }
+  },
+  {
+    "id": 21,
+    "audio": "/audio/11/viel.mp3",
+    "word": "Viel",
+    "translations": {
+      "ua": "багато",
+      "en": "a lot",
+      "de": "viel"
+    }
+  },
+  {
+    "id": 22,
+    "audio": "/audio/11/wenisch.mp3",
+    "word": "Wenisch",
+    "translations": {
+      "ua": "мало",
+      "en": "little",
+      "de": "wenig"
+    }
+  },
+  {
+    "id": 23,
+    "audio": "/audio/11/jetzt.mp3",
+    "word": "Jetzt",
+    "translations": {
+      "ua": "зараз",
+      "en": "now",
+      "de": "jetzt"
+    }
+  },
+  {
+    "id": 24,
+    "audio": "/audio/11/gleich.mp3",
+    "word": "Gleich",
+    "translations": {
+      "ua": "скоро",
+      "en": "soon",
+      "de": "gleich"
+    }
+  },
+  {
+    "id": 25,
+    "audio": "/audio/11/schaffe.mp3",
+    "word": "Schaffe",
+    "translations": {
+      "ua": "працювати",
+      "en": "to work",
+      "de": "arbeiten"
+    }
+  },
+  {
+    "id": 26,
+    "audio": "/audio/11/arbeit.mp3",
+    "word": "Arbeit",
+    "translations": {
+      "ua": "робота",
+      "en": "work",
+      "de": "Arbeit"
+    }
+  },
+  {
+    "id": 27,
+    "audio": "/audio/11/mud.mp3",
+    "word": "Müd",
+    "translations": {
+      "ua": "втомлений",
+      "en": "tired",
+      "de": "müde"
+    }
+  },
+  {
+    "id": 28,
+    "audio": "/audio/11/kaputt.mp3",
+    "word": "kaputt",
+    "translations": {
+      "ua": "виснажений",
+      "en": "exhausted",
+      "de": "kaputt"
+    }
+  },
+  {
+    "id": 29,
+    "audio": "/audio/11/hungrisch.mp3",
+    "word": "Hungrisch",
+    "translations": {
+      "ua": "голодний",
+      "en": "hungry",
+      "de": "hungrig"
+    }
+  },
+  {
+    "id": 30,
+    "audio": "/audio/11/durstich.mp3",
+    "word": "Durstich",
+    "translations": {
+      "ua": "спраглий",
+      "en": "thirsty",
+      "de": "durstig"
+    }
+  },
+  {
+    "id": 31,
+    "audio": "/audio/11/Feierowend.mp3",
+    "word": "Feierowend",
+    "translations": {
+      "ua": "кінець робочого дня",
+      "en": "end of workday",
+      "de": "Feierabend"
+    }
+  },
+  {
+    "id": 32,
+    "audio": "/audio/11/Wie gehts.mp3",
+    "word": "Wie geht’s?",
+    "translations": {
+      "ua": "як справи?",
+      "en": "how are you?",
+      "de": "wie geht's?"
+    }
+  },
+  {
+    "id": 33,
+    "audio": "/audio/11/net.mp3",
+    "word": "Net",
+    "translations": {
+      "ua": "не",
+      "en": "not",
+      "de": "nicht"
+    }
+  },
+  {
+    "id": 34,
+    "audio": "/audio/11/Isch koch net.mp3",
+    "word": "Isch koch net",
+    "translations": {
+      "ua": "я не готую",
+      "en": "I don't cook",
+      "de": "Ich koche nicht"
+    }
+  },
+  {
+    "id": 35,
+    "audio": "/audio/11/esse.mp3",
+    "word": "Esse",
+    "translations": {
+      "ua": "їсти",
+      "en": "to eat",
+      "de": "essen"
+    }
+  },
+  {
+    "id": 36,
+    "audio": "/audio/11/trinke.mp3",
+    "word": "Trinke",
+    "translations": {
+      "ua": "пити",
+      "en": "to drink",
+      "de": "trinken"
+    }
+  },
+  {
+    "id": 37,
+    "audio": "/audio/11/Daheem.mp3",
+    "word": "Daheem",
+    "translations": {
+      "ua": "вдома (гессенський)",
+      "en": "at home (Hessian)",
+      "de": "zu Hause (hessisch)"
+    }
+  },
+  {
+    "id": 38,
+    "audio": "/audio/11/fort.mp3",
+    "word": "Fort",
+    "translations": {
+      "ua": "пішов / зник",
+      "en": "gone / away",
+      "de": "weg / fort"
+    }
+  }
+]
